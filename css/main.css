@@ -1,0 +1,9 @@
+.landing {
+  background-image: url(../images/Web-Design-Vancouver-BC.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
