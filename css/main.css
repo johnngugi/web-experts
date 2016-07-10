@@ -1,9 +1,15 @@
 .landing {
   background-image: url(../images/Web-Design-Vancouver-BC.png);
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100%;
+}
+.landing-text {
+  padding-top: 25%;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 30px;
+  font-weight: 600;
+}
+.examples img {
+  height: 200px;
 }
