@@ -1,12 +1,24 @@
+html {
+  background: #ff6600;
+}
 /*
   ============================================
   Styles
   ============================================
 */
 
-/*body {
-  background-color: #e69500;
-}*/
+.row {
+  background-color: #fff;
+  color: #666666;
+  font-size: 28px;
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 100%;
+}
+.row h1 {
+  margin-left: 2%;
+  color: blue;
+}
 
 /*
   ============================================
@@ -34,5 +46,12 @@
 */
 
 .examples img {
-  height: 200px;
+
+}
+.row .large-4 {
+  width: 29.333333%;
+}
+.large-4 .images {
+  background: #666666;
+  padding: 5%;
 }
