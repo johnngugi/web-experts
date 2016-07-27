@@ -1,6 +1,9 @@
 $(document).ready(function() {
-  alert("Hello");
-  $("#cf_onclick").click(function() {
-  $("#images img.top").toggleClass("transparent");
-});
+  var currentIndex = 0;
+  var items = $(".container div");
+  var itemAmt = items.length();
+
+  var cycleItems = function() {
+    var item = $(".container div").eq(currentIndex);
+  }
 });
