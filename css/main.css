@@ -94,23 +94,6 @@ a:hover {
   padding: 5%;
 }
 
-#images {
-  position:relative;
-  height:281px;
-  width:450px;
-  margin:10% auto;
-}
-#images img {
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
--moz-transition: opacity 1s ease-in-out;
--o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-#images img.transparent {
-opacity:0;
-}
-#cf_onclick {
-cursor:pointer;
+.container div {
+  display: none;
 }
