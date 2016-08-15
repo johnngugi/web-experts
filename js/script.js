@@ -1,38 +1,43 @@
 $(document).ready(function() {
-  // alert("Test!");
-  var currentIndex = 0;
-  var items = $(".container div");
-  var itemAmt = items.length;
 
-  function cycleItems () {
-    var item = $(".container div").eq(currentIndex);
-    items.hide();
-    item.css("display", "inline-block");
-  }
 
-  var autoSlide = setInterval(function () {
-    currentIndex += 1;
-    if(currentIndex > itemAmt -1) {
-      currentIndex = 0;
+  //configuration
+  var width = 720;
+  var animationSpeed = 1000;
+  var pause = 3000;
+  var currentSlide = 1;
+
+  //cache DOM
+  var $slider = $('#slider');
+  var $slideContainer = $slider.find('.slides');
+  var $slides = $slideContainer.find('.slide');
+
+  var interval;
+
+  function startSlider() {
+    interval = setInterval(function() {
+      $slideContainer.animate({'margin-left':'-='+width}, animationSpeed, function() {
+        currentSlide++;
+        if (currentSlide === $slides.length) {
+          currentSlide = 1;
+          $slideContainer.css('margin-left', 0);
+        }
+      });
+    }, pause);
+}
+    function pauseSlider() {
+      clearInterval(interval);
     }
-    cycleItems();
-  }, 3000);
 
-  $('.next').click(function() {
-  clearInterval(autoSlide);
-  currentIndex += 1;
-  if (currentIndex > itemAmt - 1) {
-    currentIndex = 0;
-  }
-  cycleItems();
-});
 
-$('.prev').click(function() {
-  clearInterval(autoSlide);
-  currentIndex -= 1;
-  if (currentIndex < 0) {
-    currentIndex = itemAmt - 1;
-  }
-  cycleItems();
-});
+  $slider.on('mouseenter', pauseSlider).on('mouseleave', startSlider);
+
+  startSlider();
+//setInterval
+  //animate margin-left
+  //if it's left slide, go to position 1 (0px)
+
+//listen for mouseenter and pause
+//resume on mouseleave
+
 });

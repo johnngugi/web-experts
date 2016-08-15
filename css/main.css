@@ -1,5 +1,5 @@
 body {
-  background: #ff6600;
+    background: #ff6600;
 }
 
 /*
@@ -9,17 +9,17 @@ body {
 */
 
 .row {
-  background-color: #fff;
-  color: #666666;
-  font-size: 28px;
-  margin-top: 1%;
-  margin-left: 1%;
-  width: 100%;
-  padding: 5%;
+    background-color: #fff;
+    color: #666666;
+    font-size: 28px;
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 100%;
+    padding: 5%;
 }
 .row h1 {
-  margin-left: 2%;
-  color: blue;
+    margin-left: 2%;
+    color: blue;
 }
 
 /*
@@ -29,37 +29,37 @@ body {
 */
 
 .over:hover {
-  color: #000;
+    color: #000;
 }
 .title {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 .fixed {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
 }
 .nav-placeholder {
-		margin-bottom: 10%;
+    margin-bottom: 10%;
 }
 a {
-	padding-left: 15px;
-	font-size: 25px;
-  color: #fff;
+    padding-left: 15px;
+    font-size: 25px;
+    color: #fff;
 }
 a:hover {
-  color: #0099ff;
+    color: #0099ff;
 }
 .top-bar {
-	background: #1a1a1a;
+    background: #1a1a1a;
 }
 .top-bar h1 {
-	color: #fff;
+    color: #fff;
 }
-.top-bar-right li  {
-	display: inline-block;
-	background: #1a1a1a;
+.top-bar-right li {
+    display: inline-block;
+    background: #1a1a1a;
 }
 
 /*
@@ -69,17 +69,17 @@ a:hover {
 */
 
 .landing {
-  background-image: url(../images/Web-Design-Vancouver-BC.png);
-  background-size: cover;
-  height: 100%;
+    background-image: url(../images/Web-Design-Vancouver-BC.png);
+    background-size: cover;
+    height: 100%;
 }
 .landing-text {
-  padding-top: 10%;
-  padding-left: 20%;
-  padding-right: 20%;
-  font-size: 30px;
-  font-weight: 600;
-  color: #ff3333;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff3333;
 }
 
 /*
@@ -89,13 +89,41 @@ a:hover {
 */
 
 .row .large-4 {
-  width: 29.333333%;
+    width: 29.333333%;
 }
 .large-4 .images {
-  background: #666666;
-  padding: 5%;
+    background: #666666;
+    padding: 5%;
+}
+/*.container div {
+    display: none;
+}*/
+
+/*#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}*/
+
+#slider {
+    width: 720px;
+    overflow: hidden;
 }
 
-.container div {
-  display: none;
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+row #slider {
+
 }
