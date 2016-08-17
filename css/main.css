@@ -1,6 +1,13 @@
 body {
     background: #ff6600;
 }
+h1 {
+  text-align: center;
+}
+i {
+  margin-left: 2%;
+  color: #000;
+}
 
 /*
   ============================================
@@ -127,4 +134,10 @@ a:hover {
     list-style-type: none;
     width: 720px;
     height: 400px;
+}
+
+footer {
+  background: #404040;
+  marging-top: 7%;
+  padding: 2%;
 }
